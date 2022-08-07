@@ -7,16 +7,18 @@ import Footer from "./Footer";
 const API_URL = "http://www.omdbapi.com/?apikey=34a42400&";
 
 function App() {
+const [searchMovie, setSearchMovie] = useState("");
+const [movies, setMovies] = useState([]);
 
 useEffect(() => {
-  searchMovies("SpiderMan");
+  chooseMovies("SpiderMan");
 }, []);
 
-const searchMovies = async (title) => {
+const chooseMovies = async (title) => {
   const response = await fetch(`${API_URL}&s=${title}`);
   const data = await response.json();
 
-  console.log(data.Search);
+  setMovies(data.Search);
 }
   return (
     <div className="App">
@@ -25,8 +27,8 @@ const searchMovies = async (title) => {
             <h1>MovieIsland</h1>
          </div>
          <div className="search">
-           <input type="text" placeholder='Enter your movie...' />
-           <img src={SearchLogo} alt="search logo" />
+           <input type="text" value={searchMovie} placeholder='Enter your movie...' onChange={(e) => setSearchMovie(e.target.value)}/>
+           <img src={SearchLogo} alt="search logo" onClick={() => {chooseMovies(searchMovie)}}/>
          </div>
          <MovieCard />
          <Footer />
