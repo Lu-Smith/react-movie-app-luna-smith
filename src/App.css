@@ -19,6 +19,7 @@
  display: flex;
  flex-direction: row;
  justify-content: center;
+ font-family: 'Varela Round', sans-serif;
 }
 
 .App .header span {
@@ -51,6 +52,7 @@
   margin: 0 auto;
   margin-top: 40px;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  max-width: 660px;
 }
 
 

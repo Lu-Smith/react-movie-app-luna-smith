@@ -1,16 +1,16 @@
 
 .Footer {
     background-color: black;
-    color: #fcc169;
+    color: #f8ac7c;
     padding: 20px 0;
 }
 
 .Footer a {
     text-decoration: none;
-    color: #fcc169;
+    color: #f8ac7c;
     transition: 200ms all ease-in-out;
 }
 
 .Footer a:hover {
-    color: #fbb040;
+    color: #fcc8a8;
 }

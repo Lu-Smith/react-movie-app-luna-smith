@@ -1,3 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,100&family=Varela+Round&display=swap');
+
 .MovieCard {
+    
+    margin: 0 auto;
     margin-top: 60px;
+    margin-bottom: 60px;
+    background-color: #678094;
+    width: 300px;
+    height:460px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    color: #f8ac7c;
+}
+
+.MovieCard .bottom-card {
+    padding: 15px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #475a68;
+    text-align: left;
+}
+
+.MovieCard .bottom-card h4 {
+    color: white;
+    margin-bottom: 5px;
+}
+
+.MovieCard .bottom-card h2 {
+    font-family: 'Varela Round', sans-serif;
 }
