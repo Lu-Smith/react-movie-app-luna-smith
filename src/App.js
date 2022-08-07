@@ -2,6 +2,7 @@
 import './App.css';
 import SearchLogo from "./search.svg";
 import MovieCard from "./MovieCard";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
            <img src={SearchLogo} alt="search logo" />
          </div>
          <MovieCard />
+         <Footer />
     </div>
   );
 }
