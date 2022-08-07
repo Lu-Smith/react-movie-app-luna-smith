@@ -30,7 +30,20 @@ const chooseMovies = async (title) => {
            <input type="text" value={searchMovie} placeholder='Enter your movie...' onChange={(e) => setSearchMovie(e.target.value)}/>
            <img src={SearchLogo} alt="search logo" onClick={() => {chooseMovies(searchMovie)}}/>
          </div>
-         <MovieCard />
+         {movies?.length > 0 ? (
+          <div className='results'>
+            {movies.map((movie) => (
+               <MovieCard movie={movie}/>)
+            )}
+          </div>
+         ) : (
+          <div className='noResults'>
+            <h2>No results found</h2>
+          </div>
+         )}
+
+
+         
          <Footer />
     </div>
   );

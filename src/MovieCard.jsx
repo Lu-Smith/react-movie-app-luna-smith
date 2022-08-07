@@ -1,7 +1,7 @@
 import React from "react";
 import "./MovieCard.css";
 
-const MovieCard = () => {
+const MovieCard = (movie) => {
     return (
         <div className="MovieCard">
         <img src="" alt="movie poster" />
