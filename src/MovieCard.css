@@ -7,7 +7,7 @@
     margin-bottom: 60px;
     background-color: #678094;
     width: 300px;
-    height:460px;
+    height: 530px;
     text-align: center;
     border-radius: 10px;
     position: relative;
@@ -26,9 +26,15 @@
 
 .MovieCard .bottom-card h4 {
     color: white;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 .MovieCard .bottom-card h2 {
     font-family: 'Varela Round', sans-serif;
+    font-style: italic;
+}
+
+.MovieCard .bottom-card h5 {
+    color: white;
+    text-align: right;
 }

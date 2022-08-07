@@ -33,7 +33,7 @@ const chooseMovies = async (title) => {
          {movies?.length > 0 ? (
           <div className='results'>
             {movies.map((movie) => (
-               <MovieCard movie={movie}/>)
+               <MovieCard movie={movie} key={movie.imdbID}/>)
             )}
           </div>
          ) : (
